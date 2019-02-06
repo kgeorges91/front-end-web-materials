@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.Green{
+			color: green;
+			font-size: 200px;
+		}
+		.Red{
+			color: red;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+<!-- <div>
+	<h1>Hello world.</h1>
+</div>
+<button id="hidetext">hide the text</button>
+<br>
+<button id="showtext">Show the text</button> -->
+
+<!-- <div id="test1"></div>
+<div id="test2"></div> -->
+<!-- <br>
+<input type="text" name="" id="test3">
+
+	<button id="btn1">button 1</button> <br>
+	<button id="btn2">button 2</button> <br>
+	<button id="btn3">button 3</button> <br>
+
+<div id="change"><h2>the best work in the world!</h2></div>
+<div class="notice-warning">
+<button class="notice-closed">&#215;</button>
+	<strong>Warning!</strong> I&#8217;m about to lose my cool
+</div> -->
+
+
+<div class="panel">
+	<div class="panel-stage"></div>
+	<a href="#" class="panel-tab">Open <span>&#9660;</span></a>
+</div>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script type="text/javascript" src= "jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	// $('#hidetext').click(function(){
+	// 	$('div').hide();
+	// })
+	// $('#showtext').click(function(){
+	// 	$('div').show();
+	// });
+	// $('#btn1').click(function(){
+	// 	$('#test1').text("Hello world!");
+	// 	$('#test1').addClass("Green");
+	// });
+	// $('#btn2').click(function(){
+	// 	$('#test2').html("<b>Hello world!<b>");
+	// 	$('#test2').addClass("Red");
+	// });
+	// $('#btn3').click(function(){
+	// 	$('#test3').val("Dolly Duck");
+	// });
+	// $('#change').on("mouseenter", function(){
+	// 	$('h2').css("color", 'black');
+	// });
+	// $('#change').on("mouseleave", function(){
+	// 	$('h2').css("color", 'red');
+	// });
+	// $('notice-closed').on('click', function(event){
+	// 	$('notice-warning').remove();
+	// });
+
+	$('.panel-tab').on('click', function(event){
+		event.preventDefault();
+		$('.panel-stage').slideToggle('slow', function(event){
+			if($(this).is(':visible')){
+				$('.panel-tab').html('Close <span>&#9650;</span>');
+			}else {
+				$('.panel-tab').html('Open <span>&#9660;</span>');
+			}
+		});
+	});
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

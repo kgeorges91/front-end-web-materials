@@ -1,0 +1,38 @@
+.new {
+  color: #ff7b29;
+  font-weight: bold; }
+  .new span {
+    text-transform: Uppercase; }
+
+.potfolio {
+  border: 1px solid #9799a7; }
+  .potfolio ul {
+    list-style: none; }
+  .potfolio li {
+    float: left; }
+
+div {
+  font-family: Bakersville, palatino, serif;
+  font-style: italic;
+  font-weight: normal; }
+
+.container {
+  width: 960px; }
+  @media screen and (max-width: 960px) {
+    .container {
+      width: 100%; } }
+
+a {
+  color: #0087cc; }
+  a:hover {
+    color: #ff7b29; }
+
+p {
+  font: 1em "Helvetica Neue", Arial, "Lucida Grande", sans-serif; }
+
+.btn {
+  color: #fff; }
+  .btn:hover {
+    color: #9799a7; }
+
+/*# sourceMappingURL=style.css.map */
